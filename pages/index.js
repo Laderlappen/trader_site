@@ -20,7 +20,7 @@ export default function Home() {
                     <code className={styles.code}>
                         <Link
                             classname={styles.code}
-                            href="/DB Trader Client.exe"
+                            href="/DB_Trader_Client.exe"
                         >
                             DB Trading Software
                         </Link>
