@@ -13,7 +13,7 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>Dream Big Capital Software</h1>
+                <h1 className={styles.title}>Dream Big Capital</h1>
 
                 <p className={styles.description}>
                     Get started by downloading our trading software:{" "}
