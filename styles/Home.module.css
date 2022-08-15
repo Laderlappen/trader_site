@@ -77,6 +77,27 @@
     max-width: 800px;
 }
 
+.titleRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 37%;
+    position: unset !important;
+    align-items: center;
+}
+
+.logoImg {
+    width: 70px;
+    height: 70px;
+}
+
+.image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
 .card {
     margin: 1rem;
     padding: 1.5rem;
