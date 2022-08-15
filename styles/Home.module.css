@@ -87,8 +87,8 @@
 }
 
 .logoImg {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
 }
 
 .image {
@@ -151,4 +151,8 @@
     .logo img {
         filter: invert(1);
     }
+}
+
+.content {
+    z-index: 2;
 }
