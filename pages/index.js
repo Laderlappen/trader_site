@@ -7,12 +7,12 @@ import BGImage from "../components/BGImage";
 import YoutubeVideo from "../components/YTVideo";
 
 const Wrapper = styled.div`
-    z-index: 1;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    position: fixed;
+    //position: fixed;
     //padding-top: 2rem;
     //justify-content: center;
     align-items: center;
