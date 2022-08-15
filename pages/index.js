@@ -23,38 +23,39 @@ export default function Home() {
         <div>
             <BGImage />
             <Wrapper>
-                <Head>
-                    <title>DB Capital</title>
-                    <meta name="description" content="DB Capital Website" />
-                    <link rel="icon" href="/DB_Logo_only_image.ico" />
-                </Head>
+                <div className={styles.main}>
+                    <Head>
+                        <title>DB Capital</title>
+                        <meta name="description" content="DB Capital Website" />
+                        <link rel="icon" href="/DB_Logo_only_image.ico" />
+                    </Head>
 
-                <div className={styles.titleRow}>
-                    <h1 className={styles.title}>Dream Big Capital</h1>
-                    <div className={styles.logoImg}>
-                        <Image
-                            width="90px"
-                            height="90px"
-                            src="/DB_Logo_only_image_no_back.png"
-                            className={"image"}
-                        />
+                    <div className={styles.titleRow}>
+                        <h1 className={styles.title}>Dream Big Capital</h1>
+                        <div className={styles.logoImg}>
+                            <Image
+                                width="90px"
+                                height="90px"
+                                src="/DB_Logo_only_image_no_back.png"
+                                className={"image"}
+                            />
+                        </div>
                     </div>
+                    <p className={styles.description}>
+                        Get started by downloading our trading software:{" "}
+                        <code className={styles.code}>
+                            <Link
+                                classname={styles.code}
+                                href="/DB_Trader_Client.exe"
+                            >
+                                DB Trading Software
+                            </Link>
+                        </code>
+                    </p>
+                    {/* <footer className={styles.footer}>
+                        Powered by{" DB Capital "}
+                    </footer> */}
                 </div>
-                <p className={styles.description}>
-                    Get started by downloading our trading software:{" "}
-                    <code className={styles.code}>
-                        <Link
-                            classname={styles.code}
-                            href="/DB_Trader_Client.exe"
-                        >
-                            DB Trading Software
-                        </Link>
-                    </code>
-                </p>
-                {/* 
-                <footer className={styles.footer}>
-                    Powered by{" DB Capital "}
-                </footer> */}
             </Wrapper>
         </div>
     );
