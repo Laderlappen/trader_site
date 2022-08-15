@@ -5,8 +5,8 @@ import styles from "../styles/Home.module.css";
 export default class YoutubeVideo extends React.Component {
     render() {
         const opts = {
-            height: "390",
-            width: "640",
+            height: "360",
+            width: "540",
             playerVars: {
                 autoplay: 1,
             },

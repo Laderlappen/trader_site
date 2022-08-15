@@ -88,9 +88,8 @@
 .titleRow {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 37%;
-    position: unset !important;
+    justify-content: center;
+    width: 100%;
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 4rem;
@@ -99,13 +98,12 @@
 .logoImg {
     width: 90px;
     height: 90px;
+    margin-left: 2rem;
 }
 
 .image {
     object-fit: contain;
     width: 100% !important;
-    position: relative !important;
-    height: unset !important;
 }
 
 .card {
