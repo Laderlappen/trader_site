@@ -1,5 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
+import styles from "../styles/Home.module.css";
 
 export default class YoutubeVideo extends React.Component {
     render() {
@@ -13,6 +14,7 @@ export default class YoutubeVideo extends React.Component {
 
         return (
             <div>
+                <h3 className={styles.title3}>Tutorial Video</h3>
                 <YouTube
                     videoId="QH2-TGUlwu4"
                     opts={opts}
