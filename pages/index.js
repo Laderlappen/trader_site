@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import styled from "styled-components";
 import BGImage from "../components/BGImage";
+import YoutubeVideo from "../components/YTVideo";
 
 const Wrapper = styled.div`
     z-index: 1;
@@ -41,6 +42,9 @@ export default function Home() {
                             />
                         </div>
                     </div>
+
+                    <YoutubeVideo />
+
                     <p className={styles.description}>
                         Get started by downloading our trading software:{" "}
                         <code className={styles.code}>

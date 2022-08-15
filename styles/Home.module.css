@@ -87,6 +87,8 @@
     width: 37%;
     position: unset !important;
     align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
 }
 
 .logoImg {
