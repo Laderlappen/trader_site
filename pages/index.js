@@ -5,6 +5,8 @@ import Link from "next/link";
 import styled from "styled-components";
 import BGImage from "../components/BGImage";
 import YoutubeVideo from "../components/YTVideo";
+import Modal from "../components/Modal";
+import { useState } from "react";
 
 const Wrapper = styled.div`
     z-index: 5;
@@ -20,6 +22,7 @@ const Wrapper = styled.div`
 `;
 
 export default function Home() {
+    const [showModal, setShowModal] = useState(false);
     return (
         <div>
             <BGImage />
@@ -30,7 +33,6 @@ export default function Home() {
                         <meta name="description" content="DB Capital Website" />
                         <link rel="icon" href="/DB_Logo_only_image.ico" />
                     </Head>
-
                     <div className={styles.titleRow}>
                         <h1 className={styles.title}>Dream Big Capital</h1>
                         <div className={styles.logoImg}>
@@ -44,18 +46,37 @@ export default function Home() {
                     </div>
                     <h3 className={styles.title3}>Tutorial Video</h3>
                     <YoutubeVideo />
-
                     <p className={styles.description}>
                         Get started by downloading our trading software:{" "}
                         <code className={styles.code}>
-                            <Link
+                            <button
                                 classname={styles.code}
-                                href="/DB_Trader_Client.exe"
+                                onClick={() => setShowModal(true)}
                             >
                                 DB Trading Software
-                            </Link>
+                            </button>
                         </code>
                     </p>
+
+                    <Modal onClose={() => setShowModal(false)} show={showModal}>
+                        <p className={styles.termstitle}>
+                            Terms and Conditions:
+                        </p>
+                        <p className={styles.terms}>
+                            By downloading this trading client you accept that
+                            DB Capital or any of its employees or associates are
+                            not liable for any finantial loss. Use this software
+                            at your own risk with money you can afford to lose.
+                        </p>
+                        <code className={styles.code}>
+                            <Link
+                                classname={styles.code}
+                                href="DB_Trading_client.exe"
+                            >
+                                Download DB Trading Client
+                            </Link>
+                        </code>
+                    </Modal>
                     {/* <footer className={styles.footer}>
                         Powered by{" DB Capital "}
                     </footer> */}
