@@ -50,7 +50,7 @@ export default function Home() {
                         Get started by downloading our trading software:{" "}
                         <code className={styles.code}>
                             <button
-                                classname={styles.code}
+                                className={styles.code}
                                 onClick={() => setShowModal(true)}
                             >
                                 DB Trading Software
@@ -65,15 +65,15 @@ export default function Home() {
                         <p className={styles.terms}>
                             By downloading this trading client you accept that
                             DB Capital or any of its employees or associates are
-                            not liable for any finantial loss. Use this software
+                            not liable for any financial loss. Use this software
                             at your own risk with money you can afford to lose.
                         </p>
                         <code className={styles.code}>
                             <Link
-                                classname={styles.code}
-                                href="DB_Trading_client.exe"
+                                className={styles.code}
+                                href="/DB_Trading_Client.exe"
                             >
-                                Download DB Trading Client
+                                Accept Terms and Download
                             </Link>
                         </code>
                     </Modal>
