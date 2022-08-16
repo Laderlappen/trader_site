@@ -21,6 +21,13 @@ const Wrapper = styled.div`
     //background-color: brown;
 `;
 
+const Button = styled.button`
+    background-color: #0a1b4a;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+`;
+
 export default function Home() {
     const [showModal, setShowModal] = useState(false);
     return (
@@ -49,12 +56,12 @@ export default function Home() {
                     <p className={styles.description}>
                         Get started by downloading our trading software:{" "}
                         <code className={styles.code}>
-                            <button
+                            <Button
                                 className={styles.code}
                                 onClick={() => setShowModal(true)}
                             >
                                 DB Trading Software
-                            </button>
+                            </Button>
                         </code>
                     </p>
 
