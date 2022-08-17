@@ -54,14 +54,12 @@ export default function Home() {
                     <YoutubeVideo />
                     <p className={styles.description}>
                         Get started by downloading our trading software:{" "}
-                        <code className={styles.code}>
-                            <Button
-                                className={styles.code}
-                                onClick={() => setShowModal(true)}
-                            >
-                                DB Trading Software
-                            </Button>
-                        </code>
+                        <Button
+                            className={styles.code}
+                            onClick={() => setShowModal(true)}
+                        >
+                            DB Trading Software
+                        </Button>
                     </p>
 
                     <Modal onClose={() => setShowModal(false)} show={showModal}>
