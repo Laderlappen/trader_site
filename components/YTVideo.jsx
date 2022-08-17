@@ -17,7 +17,7 @@ export default class YoutubeVideo extends React.Component {
                 <YouTube
                     videoId="Wf_wgdsMcpE"
                     opts={opts}
-                    onReady={this._onReady}
+                    onReady={this._loading}
                 />
             </div>
         );
