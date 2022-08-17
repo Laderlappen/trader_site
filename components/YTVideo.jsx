@@ -5,8 +5,8 @@ import styles from "../styles/Home.module.css";
 export default class YoutubeVideo extends React.Component {
     render() {
         const opts = {
-            height: "360",
-            width: "540",
+            height: "640",
+            width: "1024",
             playerVars: {
                 autoplay: 1,
             },
@@ -15,7 +15,7 @@ export default class YoutubeVideo extends React.Component {
         return (
             <div>
                 <YouTube
-                    videoId="QH2-TGUlwu4"
+                    videoId="Wf_wgdsMcpE"
                     opts={opts}
                     onReady={this._onReady}
                 />
