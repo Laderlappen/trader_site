@@ -86,6 +86,16 @@ export default function Home() {
                     <footer className={styles.footer}>
                         <p>Powered by{" DB Capital "}</p>
                         <p>Enquiries/Payments: dreambigrobot@gmail.com</p>
+                        <p className={styles.link}>
+                            <Link
+                                href="https://www.xmza.com/referral?token=_icnhELVUn5RGTiymO9HrQ"
+                                passHref
+                            >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    XM Broker Link
+                                </a>
+                            </Link>
+                        </p>
                     </footer>
                 </div>
             </Wrapper>
