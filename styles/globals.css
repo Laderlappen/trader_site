@@ -15,6 +15,28 @@ a {
     box-sizing: border-box;
 }
 
+.YT-video {
+    width: 80%;
+    max-width: 1024px;
+}
+
+.YT-video .iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.YT-video .iframe-wrapper iframe {
+    overflow: hidden;
+    border: 0;
+    align-self: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;

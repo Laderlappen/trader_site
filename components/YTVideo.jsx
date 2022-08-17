@@ -5,19 +5,18 @@ import styles from "../styles/Home.module.css";
 export default class YoutubeVideo extends React.Component {
     render() {
         const opts = {
-            height: "640",
-            width: "1024",
             playerVars: {
                 autoplay: 1,
             },
         };
 
         return (
-            <div>
+            <div className="YT-video">
                 <YouTube
                     videoId="Wf_wgdsMcpE"
                     opts={opts}
                     onReady={this._loading}
+                    className="iframe-wrapper"
                 />
             </div>
         );
