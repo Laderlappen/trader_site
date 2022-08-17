@@ -73,10 +73,7 @@ export default function Home() {
                             at your own risk with money you can afford to lose.
                         </p>
                         <code className={styles.code}>
-                            <Link
-                                className={styles.code}
-                                href="/DB_Trading_Client.exe"
-                            >
+                            <Link href="/DB_Trading_Client.exe">
                                 Accept Terms and Download
                             </Link>
                         </code>
