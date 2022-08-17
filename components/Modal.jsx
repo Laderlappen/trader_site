@@ -18,9 +18,9 @@ const Modal = ({ show, onClose, children, title }) => {
         <StyledModalOverlay onClick={handleCloseClick}>
             <StyledModal>
                 <StyledModalHeader>
-                    <a href="#" onClick={handleCloseClick}>
+                    <StyledExit href="#" onClick={handleCloseClick}>
                         x
-                    </a>
+                    </StyledExit>
                 </StyledModalHeader>
                 <StyledModalBody>{children}</StyledModalBody>
             </StyledModal>
@@ -36,6 +36,10 @@ const Modal = ({ show, onClose, children, title }) => {
         return null;
     }
 };
+
+const StyledExit = styled.a`
+    color: black;
+`;
 
 const StyledModalBody = styled.div`
     padding-top: 10px;
