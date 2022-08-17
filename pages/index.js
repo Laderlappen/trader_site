@@ -15,7 +15,6 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     //position: fixed;
-    //padding-top: 2rem;
     //justify-content: center;
     align-items: center;
     //background-color: brown;
@@ -84,9 +83,10 @@ export default function Home() {
                             </Link>
                         </code>
                     </Modal>
-                    {/* <footer className={styles.footer}>
-                        Powered by{" DB Capital "}
-                    </footer> */}
+                    <footer className={styles.footer}>
+                        <p>Powered by{" DB Capital "}</p>
+                        <p>Enquiries/Payments: dreambigrobot@gmail.com</p>
+                    </footer>
                 </div>
             </Wrapper>
         </div>

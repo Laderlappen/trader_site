@@ -4,8 +4,8 @@
 
 .main {
     min-height: 100vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
     /* margin-top: 2rem; */
     flex: 1;
     display: flex;
@@ -21,10 +21,13 @@
 .footer {
     display: flex;
     flex: 1;
-    padding: 2rem 0;
+    padding: 0.7rem 0;
     border-top: 1px solid #eaeaea;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+
+    background-color: white;
+    width: 100%;
 }
 
 .footer a {
