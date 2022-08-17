@@ -15,7 +15,7 @@ const Modal = ({ show, onClose, children, title }) => {
     };
 
     const modalContent = show ? (
-        <StyledModalOverlay onClick={handleCloseClick}>
+        <StyledModalOverlay>
             <StyledModal>
                 <StyledModalHeader>
                     <StyledExit href="#" onClick={handleCloseClick}>
