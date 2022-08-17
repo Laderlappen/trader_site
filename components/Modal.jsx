@@ -56,14 +56,15 @@ const StyledModalHeader = styled.div`
 
 const StyledModal = styled.div`
     background: white;
-    width: 500px;
+    max-width: 500px;
+    width: 90%;
     height: 340px;
     border-radius: 15px;
     padding: 15px;
     text-align: center;
 `;
 const StyledModalOverlay = styled.div`
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
