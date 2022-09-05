@@ -13,7 +13,7 @@ export default class YoutubeVideo extends React.Component {
         return (
             <div className="YT-video">
                 <YouTube
-                    videoId="Wf_wgdsMcpE"
+                    videoId="g6VUT-20R9s"
                     opts={opts}
                     onReady={this._loading}
                     className="iframe-wrapper"
