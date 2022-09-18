@@ -55,8 +55,8 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                    <h3 className={styles.title3}>Tutorial Video</h3>
-                    <YoutubeVideo />
+                    {/* <h3 className={styles.title3}>Tutorial Video</h3>
+                    <YoutubeVideo /> */}
                     <div className={styles.description}>
                         <span>
                             Get started by downloading our trading software:
